@@ -33,8 +33,8 @@ a:hover, a:focus{text-decoration:none;}
 
 h1,h2,h3,h4,h5,h6{margin:0;}
 h1 {font-size:87px; color:var(--white-color); line-height:78px;letter-spacing: 3px; font-family: var(--tertiary-font-regular);}
-/* h2 {font-size:; color:; line-height:; }
-h3 {font-size:; color:; line-height:; }
+h2 {font-size: 55px; color:var(--white-color); line-height: 70px; }
+/* h3 {font-size:; color:; line-height:; }
 h4 {font-size:; color:; line-height:; }
 h5 {font-size:; color:; line-height:; }
 h6 {font-size:; color:; line-height:; } */
@@ -104,6 +104,18 @@ p:last-child{margin:0;}
 .hero-section .conters-wrapper .counter .counter-title {margin-top: 10px;font-size: 16px;line-height: 24px;font-family: var(--secondary-font);font-weight: 400;}
 /* hero section css end  */
 
+/* Wallet support section css start */
+.wallet-support-section{padding: 50px 0 190px;}
+.wallet-support-section .wallets-wrapper{max-width: 1100px;margin: 0 auto;}
+.wallet-support-section .wallets-wrapper .box-row{margin: 0 -60px;row-gap: 50px;}
+.wallet-support-section .wallets-wrapper .walltes-box{padding: 0 60px;width: 33.33%;}
+/* Wallet support section css end */
+
+@media(max-width:1366px){
+  .wallet-support-section .wallets-wrapper .box-row {margin: 0 -16px;}
+  .wallet-support-section .wallets-wrapper .walltes-box {padding: 0 16px;}
+}
+
 @media(max-width:1199.98px){
   h1 {font-size: 60px;line-height: 68px;}
 }
@@ -126,6 +138,9 @@ p:last-child{margin:0;}
   .hero-section .btn-wrapper {justify-content: center;}
   .hero-section .section-row .section-col.right-part{max-width: 400px;margin: 0 auto;}
   .hero-section .conters-wrapper {display: flex;justify-content: center;}
+  .wallet-support-section {padding: 30px 0 90px;}
+  .wallet-support-section .wallets-wrapper .box-row {display: flex;flex-wrap: wrap;justify-content: center;row-gap: 30px;}
+  .wallet-support-section .wallets-wrapper .walltes-box {display: flex;align-items: center;}
 }
 @media(max-width:575.98px){
     h1 {font-size: 44px;line-height: 50px;}
@@ -134,6 +149,7 @@ p:last-child{margin:0;}
     .hero-section .conters-wrapper .counter .count {font-size: 24px;line-height: 32px;}
     .hero-section .counters {margin-top: 30px;}
     .hero-section .counters .conters-wrapper .counter + .counter {margin-left: 20px;}
+    .wallet-support-section .wallets-wrapper .walltes-box {width: 50%;}
 }
 
 /* Css end here */

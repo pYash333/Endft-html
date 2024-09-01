@@ -26,7 +26,7 @@
     .header .header-desktop .main_menu{position: absolute;top: 86px;right: 0;background-color: #1F1955;margin: 0;width: 100%;display: none;}
     .header .header-desktop .main_menu.open{right:0;}
     .header .header-desktop .main_menu ul{flex-direction:column;}
-    .header .header-desktop .main_menu ul li {padding:10px 5px;}
+    .header .header-desktop .main_menu ul li {padding:10px 16px;}
     .header .btn-primary a {padding: 10px 25px;}
     .header .header-desktop .header-right {display: flex;align-items: center;}
     .header .header-desktop .menu-btn{display: inline-block;margin-left: 10px;}
