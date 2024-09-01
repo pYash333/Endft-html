@@ -11,4 +11,44 @@ $(function () {
       time: 1000,
     });
   }
+  if ($(".trending-section").length > 0) {
+    $(".trending-section .trending-slider").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+          }
+        },
+      ]
+    });
+  }
 });
