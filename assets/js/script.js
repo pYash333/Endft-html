@@ -19,7 +19,7 @@ $(function () {
       centerMode: false,
       focusOnSelect: true,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3000,
       responsive: [
         {
           breakpoint: 1200,
