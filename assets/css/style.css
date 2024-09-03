@@ -131,8 +131,29 @@ p:last-child{margin:0;}
 .trending-section .card-wrapper .card .nft-details .tag.plus {color: var(--color3);}
 .trending-section .trending-slider-wrapper .slick-slide > div {margin: 0 15px;}
 .trending-section .trending-slider-wrapper .slick-list {margin: 0 -15px;overflow: visible !important;}
+.trending-section .outline-btn{margin-top:40px;}
+
 /* Trending section css end */
 
+/* Top collections section start */
+.top-collection-section .custom-tab-wrapper .tab-wrapper{margin-top: 60px;}
+.top-collection-section .custom-tab-wrapper .tab-wrapper ul{ list-style-type: none; }
+.top-collection-section .custom-tab-wrapper .nav-tabs {display: flex;flex-wrap: wrap; justify-content: center; margin-bottom: 10px;gap: 22px;padding: 0;}
+.top-collection-section .custom-tab-wrapper .tab-link {text-align: center; list-style: none;padding: 16px;min-width: 200px; color: var(--white-color);cursor: pointer;font-size: 18px;line-height: 32px;font-weight: 600;letter-spacing: 1px;border:1px solid var(--white-color);border-radius: 66px;}
+.top-collection-section .custom-tab-wrapper .tab-link:hover {color: var(--white-color);border-color: var(--primary-color);background: var(--primary-color);transition: var(--primary-transition);}
+.top-collection-section .custom-tab-wrapper .tab-link.active {color: var(--white-color);border-color: var(--primary-color);background: var(--primary-color);}
+.top-collection-section .custom-tab-wrapper .tab-content{margin-top: 60px;}
+.top-collection-section .custom-tab-wrapper .tab-pane {display: none;opacity: 0;transition: all .3s linear;}
+.top-collection-section .custom-tab-wrapper .tab-pane.active {display: block;opacity: 1;}
+.top-collection-section .custom-tab-wrapper .tab-content .tab-row{margin: 0 -16px;row-gap: 32px;}
+.top-collection-section .custom-tab-wrapper .tab-content .tab-row .tab-col{padding: 0 16px;width: 25%;}
+.trending-section.top-collection-section .card-wrapper .card .card-img{width: 100%;height: 280px;}
+
+
+/* Top collections section end */
+@media(max-width:1429px){
+  .top-collection-section .custom-tab-wrapper .tab-link {min-width: 150px;font-size: 16px;line-height: 24px;}
+}
 @media(max-width:1366px){
   .wallet-support-section .wallets-wrapper .box-row {margin: 0 -16px;}
   .wallet-support-section .wallets-wrapper .walltes-box {padding: 0 16px;}
@@ -140,6 +161,8 @@ p:last-child{margin:0;}
 
 @media(max-width:1199.98px){
   h1 {font-size: 60px;line-height: 68px;}
+  .top-collection-section .custom-tab-wrapper .tab-link {width: calc(25% - 32px);}
+  .top-collection-section .custom-tab-wrapper .tab-content .tab-row .tab-col {width: 33.33%;}
 }
 @media(max-width:991.98px){
   h1 {font-size: 50px;line-height: 58px;}
@@ -153,6 +176,7 @@ p:last-child{margin:0;}
   .trending-section .card-wrapper .card .collector-logo {width: 30px;}
   .trending-section .card-wrapper .card .content-left .profile {width: 40px;height: 40px;}
   .trending-section .card-wrapper .card .collector-name {font-size: 16px;line-height: 24px;}
+  .top-collection-section .custom-tab-wrapper .tab-link {width: calc(33.33% - 32px);}
 }
 @media(max-width:767.98px){
   h2 {font-size: 40px;line-height: 52px;}
@@ -175,6 +199,9 @@ p:last-child{margin:0;}
   .trending-section {padding: 40px 0;}
   .trending-section .card-wrapper .card .card-img {height: 220px;}
   .trending-section .card-wrapper {padding: 15px;}
+  .top-collection-section .custom-tab-wrapper .tab-content .tab-row {display: flex;flex-wrap: wrap;}
+  .top-collection-section .custom-tab-wrapper .tab-content .tab-row .tab-col {width: 50%;}
+  .top-collection-section .custom-tab-wrapper .tab-link {width: calc(50% - 32px);}
 }
 @media(max-width:575.98px){
     h1 {font-size: 44px;line-height: 50px;}
@@ -185,6 +212,9 @@ p:last-child{margin:0;}
     .hero-section .counters .conters-wrapper .counter + .counter {margin-left: 20px;}
     .wallet-support-section .wallets-wrapper .walltes-box {width: 50%;}
     .trending-section .trending-slider-wrapper {max-width: 320px;}
+    .top-collection-section .custom-tab-wrapper .tab-wrapper {margin-top: 40px;}
+    .top-collection-section .custom-tab-wrapper .tab-link {width: auto;}
+    .top-collection-section .custom-tab-wrapper .tab-content .tab-row .tab-col {width: 100%;}
 }
 
 /* Css end here */

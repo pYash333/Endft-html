@@ -25,30 +25,42 @@ $(function () {
           breakpoint: 1200,
           settings: {
             slidesToShow: 2,
-          }
+          },
         },
         {
           breakpoint: 992,
           settings: {
             arrows: false,
             slidesToShow: 2,
-          }
+          },
         },
         {
           breakpoint: 768,
           settings: {
             arrows: false,
             slidesToShow: 2,
-          }
+          },
         },
         {
           breakpoint: 576,
           settings: {
             arrows: false,
             slidesToShow: 1,
-          }
+          },
         },
-      ]
+      ],
+    });
+  }
+  if ($(".top-collection-section").length > 0) {
+    $(".custom-tab-wrapper .tab-link").click(function () {
+      var tabID = $(this).attr("data-tab");
+
+      $(this).addClass("active").siblings().removeClass("active");
+
+      $("#tab-" + tabID)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
     });
   }
 });
