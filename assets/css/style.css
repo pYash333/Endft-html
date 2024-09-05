@@ -114,21 +114,21 @@ p:last-child{margin:0;}
 /* Trending section css start */
 .trending-section{padding: 80px 0;overflow-x: clip;}
 .trending-section .trending-slider-wrapper{max-width: 1200px;margin: 50px auto 0;}
-.trending-section .card-wrapper {border-radius: 20px;border: 1px solid #fff;padding: 20px;}
-.trending-section .card-wrapper .card {height: 100%;border-radius: 15px;}
-.trending-section .card-wrapper .card .card-img {border-radius: 15px;overflow: hidden;height: 300px;}
-.trending-section .card-wrapper .card .card-img img{width: 100%;height: 100%; object-fit: cover; object-position: center;}
-.trending-section .card-wrapper .card .content-left {gap: 20px;}
-.trending-section .card-wrapper .card .content-left .profile {width: 60px;height: 60px;border-radius: 10px;overflow: hidden;}
-.trending-section .card-wrapper .card .card-body {margin-top: 20px;}
-.trending-section .card-wrapper .card .collector-name {font-size: 18px;line-height: 30px;font-weight: 600;}
-.trending-section .card-wrapper .card .collector-info {font-size: 14px;line-height: 20px;margin-top: 5px;color: rgb(from var(--white-color) r g b / 0.5);}
-.trending-section .card-wrapper .card .collector-logo {width: 40px;margin-left: 20px;}
-.trending-section .card-wrapper .card .nft-details {margin-top: 20px;}
-.trending-section .card-wrapper .card .nft-details > div {flex-direction: column;}
-.trending-section .card-wrapper .card .nft-details .tag {font-size: 14px;line-height: 20px;}
-.trending-section .card-wrapper .card .nft-details .tag.minus {color: var(--color4);}
-.trending-section .card-wrapper .card .nft-details .tag.plus {color: var(--color3);}
+.card-wrapper {border-radius: 20px;border: 1px solid #fff;padding: 20px;}
+.card-wrapper .card {height: 100%;border-radius: 15px;}
+.card-wrapper .card .card-img {border-radius: 15px;overflow: hidden;height: 300px;}
+.card-wrapper .card .card-img img{width: 100%;height: 100%; object-fit: cover; object-position: center;}
+.card-wrapper .card .content-left {gap: 20px;}
+.card-wrapper .card .content-left .profile {width: 60px;height: 60px;border-radius: 10px;overflow: hidden;}
+.card-wrapper .card .card-body {margin-top: 20px;}
+.card-wrapper .card .collector-name {font-size: 18px;line-height: 30px;font-weight: 600;}
+.card-wrapper .card .collector-info {font-size: 14px;line-height: 20px;margin-top: 5px;color: rgb(from var(--white-color) r g b / 0.5);}
+.card-wrapper .card .collector-logo {width: 40px;margin-left: 20px;}
+.card-wrapper .card .nft-details {margin-top: 20px;}
+.card-wrapper .card .nft-details > div {flex-direction: column;}
+.card-wrapper .card .nft-details .tag {font-size: 14px;line-height: 20px;}
+.card-wrapper .card .nft-details .tag.minus {color: var(--color4);}
+.card-wrapper .card .nft-details .tag.plus {color: var(--color3);}
 .trending-section .trending-slider-wrapper .slick-slide > div {margin: 0 15px;}
 .trending-section .trending-slider-wrapper .slick-list {margin: 0 -15px;overflow: visible !important;}
 .trending-section .outline-btn{margin-top:40px;}
@@ -158,6 +158,7 @@ p:last-child{margin:0;}
 
 /* Top categories section start */
 
+/* Create and sell NFt section start */
 .create-and-sell-section{padding: 80px 0;}
 .create-and-sell-section .create-and-sell-inner{padding: 60px 0;background: rgb(from var(--white-color) r g b / 0.1);border-radius: 40px;border: 1px solid var(--white-color);}
 .create-and-sell-section .info-card-wrapper { margin-top: 60px; padding: 0 50px; }
@@ -166,6 +167,17 @@ p:last-child{margin:0;}
 .create-and-sell-section .info-card-wrapper .info-card-row .info-card .icon { display: inline-block; }
 .create-and-sell-section .info-card-wrapper .info-card-row .info-card h3 { margin-top: 30px; }
 .create-and-sell-section .info-card-wrapper .info-card-row .info-card .content { margin-top: 30px; }
+/* Create and sell NFt section end */
+
+/* Articles section start */
+.articles-section{padding: 80px 0;}
+.articles-section .trending-slider-wrapper{margin-top: 60px;}
+.articles-section .trending-slider-wrapper .articles-card { padding: 0 16px; width: 33.33%; }
+.articles-section .outline-btn{margin: 60px auto 0;}
+.card-wrapper .card .date {display: inline-block; font-size: 14px;line-height: 20px;color: rgb(from var(--white-color) r g b / 0.5);margin-top: 25px;}
+.articles-section .trending-slider-wrapper { row-gap: 40px; }
+/* Articles section end */7
+
 
 
 @media(max-width:1429px){
@@ -191,13 +203,14 @@ p:last-child{margin:0;}
   .hero-section .content {margin-top: 20px;}
   .hero-section .btn-wrapper {margin-top: 30px;}
   .hero-section {padding: 60px 0;}
-  .trending-section .card-wrapper .card .content-left .profile {flex-shrink: 0;}
-  .trending-section .card-wrapper .card .collector-logo {width: 30px;}
-  .trending-section .card-wrapper .card .content-left .profile {width: 40px;height: 40px;}
-  .trending-section .card-wrapper .card .collector-name {font-size: 16px;line-height: 24px;}
+  .card-wrapper .card .content-left .profile {flex-shrink: 0;}
+  .card-wrapper .card .collector-logo {width: 30px;}
+  .card-wrapper .card .content-left .profile {width: 40px;height: 40px;}
+  .card-wrapper .card .collector-name {font-size: 16px;line-height: 24px;}
   .top-collection-section .custom-tab-wrapper .tab-link {width: calc(33.33% - 32px);}
   .create-and-sell-section .create-and-sell-inner { padding: 60px 40px; }
   .create-and-sell-section .info-card-wrapper { padding: 0; }
+  .articles-section .trending-slider-wrapper .articles-card { width: 50%; }
 }
 @media(max-width:767.98px){
   h2 {font-size: 40px;line-height: 52px;}
@@ -214,18 +227,20 @@ p:last-child{margin:0;}
   .wallet-support-section .wallets-wrapper .box-row {display: flex;flex-wrap: wrap;justify-content: center;row-gap: 30px;}
   .wallet-support-section .wallets-wrapper .walltes-box {display: flex;align-items: center;}
   .trending-section .trending-slider-wrapper {margin: 30px auto 0;}
-  .trending-section .card-wrapper .card .card-content-wrapper {display: flex;justify-content: space-between;}
-  .trending-section .card-wrapper .card .content-left {display: flex;align-items: center;gap: 10px;}
-  .trending-section .card-wrapper .card .nft-details {display: flex;justify-content: space-between;}
+  .card-wrapper .card .card-content-wrapper {display: flex;justify-content: space-between;}
+  .card-wrapper .card .content-left {display: flex;align-items: center;gap: 10px;}
+  .card-wrapper .card .nft-details {display: flex;justify-content: space-between;}
   .trending-section {padding: 40px 0;}
-  .trending-section .card-wrapper .card .card-img {height: 220px;}
-  .trending-section .card-wrapper {padding: 15px;}
+  .card-wrapper .card .card-img {height: 220px;}
+  .card-wrapper {padding: 15px;}
   .top-collection-section .custom-tab-wrapper .tab-content .tab-row {display: flex;flex-wrap: wrap;}
   .top-collection-section .custom-tab-wrapper .tab-content .tab-row .tab-col {width: 50%;}
   .top-collection-section .custom-tab-wrapper .tab-link {width: calc(50% - 32px);}
   .create-and-sell-section { padding: 40px 0; }
   .create-and-sell-section .info-card-wrapper .info-card-row { display: flex; flex-wrap: wrap; }
   .create-and-sell-section .info-card-wrapper .info-card-row .info-card { width: 100%; }
+  .articles-section { padding: 40px 0; }
+  .articles-section .trending-slider-wrapper { display: flex; flex-wrap: wrap; } 
 }
 @media(max-width:575.98px){
     h1 {font-size: 44px;line-height: 50px;}
@@ -239,6 +254,7 @@ p:last-child{margin:0;}
     .top-collection-section .custom-tab-wrapper .tab-wrapper {margin-top: 40px;}
     .top-collection-section .custom-tab-wrapper .tab-link {width: auto;}
     .top-collection-section .custom-tab-wrapper .tab-content .tab-row .tab-col {width: 100%;}
+    .articles-section .trending-slider-wrapper .articles-card { width: 100%; max-width: 300px; margin: 0 auto; }
 }
 
 /* Css end here */
