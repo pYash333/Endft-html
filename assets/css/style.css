@@ -34,8 +34,8 @@ a:hover, a:focus{text-decoration:none;}
 h1,h2,h3,h4,h5,h6{margin:0;}
 h1 {font-size:87px; color:var(--white-color); line-height:78px;letter-spacing: 3px; font-family: var(--tertiary-font-regular);}
 h2 {font-size: 55px; color:var(--white-color); line-height: 70px; }
-/* h3 {font-size:; color:; line-height:; }
-h4 {font-size:; color:; line-height:; }
+h3 {font-size:28px; color:var(--white-color); line-height:40px; }
+/*h4 {font-size:; color:; line-height:; }
 h5 {font-size:; color:; line-height:; }
 h6 {font-size:; color:; line-height:; } */
 
@@ -154,12 +154,24 @@ p:last-child{margin:0;}
 /* Top categories section start */
 .trending-section.top-categories-section .trending-slider-wrapper .slick-list{overflow: hidden !important;}
 .top-categories-section .slick-prev.slick-arrow {left: -34px;}
-.top-categories-section .slick-next.slick-arrow {right: -34px;}
+.top-categories-section .slick-next.slick-arrow { right: -34px; }
 
 /* Top categories section start */
 
+.create-and-sell-section{padding: 80px 0;}
+.create-and-sell-section .create-and-sell-inner{padding: 60px 0;background: rgb(from var(--white-color) r g b / 0.1);border-radius: 40px;border: 1px solid var(--white-color);}
+.create-and-sell-section .info-card-wrapper { margin-top: 60px; padding: 0 50px; }
+.create-and-sell-section .info-card-wrapper .info-card-row { margin: 0 -33px; }
+.create-and-sell-section .info-card-wrapper .info-card-row .info-card { padding: 0 33px; width: 33.33%;}
+.create-and-sell-section .info-card-wrapper .info-card-row .info-card .icon { display: inline-block; }
+.create-and-sell-section .info-card-wrapper .info-card-row .info-card h3 { margin-top: 30px; }
+.create-and-sell-section .info-card-wrapper .info-card-row .info-card .content { margin-top: 30px; }
+
+
 @media(max-width:1429px){
   .top-collection-section .custom-tab-wrapper .tab-link {min-width: 150px;font-size: 16px;line-height: 24px;}
+  .create-and-sell-section .info-card-wrapper .info-card-row .info-card { width: 50%; padding: 0 16px; }  
+  .create-and-sell-section .info-card-wrapper .info-card-row {row-gap: 40px;margin: 0 -16px;}
 }
 @media(max-width:1366px){
   .wallet-support-section .wallets-wrapper .box-row {margin: 0 -16px;}
@@ -184,6 +196,8 @@ p:last-child{margin:0;}
   .trending-section .card-wrapper .card .content-left .profile {width: 40px;height: 40px;}
   .trending-section .card-wrapper .card .collector-name {font-size: 16px;line-height: 24px;}
   .top-collection-section .custom-tab-wrapper .tab-link {width: calc(33.33% - 32px);}
+  .create-and-sell-section .create-and-sell-inner { padding: 60px 40px; }
+  .create-and-sell-section .info-card-wrapper { padding: 0; }
 }
 @media(max-width:767.98px){
   h2 {font-size: 40px;line-height: 52px;}
@@ -209,6 +223,9 @@ p:last-child{margin:0;}
   .top-collection-section .custom-tab-wrapper .tab-content .tab-row {display: flex;flex-wrap: wrap;}
   .top-collection-section .custom-tab-wrapper .tab-content .tab-row .tab-col {width: 50%;}
   .top-collection-section .custom-tab-wrapper .tab-link {width: calc(50% - 32px);}
+  .create-and-sell-section { padding: 40px 0; }
+  .create-and-sell-section .info-card-wrapper .info-card-row { display: flex; flex-wrap: wrap; }
+  .create-and-sell-section .info-card-wrapper .info-card-row .info-card { width: 100%; }
 }
 @media(max-width:575.98px){
     h1 {font-size: 44px;line-height: 50px;}
