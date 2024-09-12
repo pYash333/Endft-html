@@ -178,6 +178,24 @@ p:last-child{margin:0;}
 .articles-section .trending-slider-wrapper { row-gap: 40px; }
 /* Articles section end */
 
+/* Get updates setion css start */
+.get-updates-section { padding: 110px 0; background-color: #0e1135;}
+.get-updates-section .content { margin-top: 50px; }
+.get-updates-section .form-wrapper { margin-top: 50px; }
+.get-updates-section .form-wrapper { max-width: 860px; width: 100%; margin: 50px auto 0; }
+
+
+
+.form-wrapper .input-wrapper { position: relative; }
+.form-wrapper .input-wrapper input[type="email"] { width: 100%; padding: 22px 240px 22px 72px; border-radius: 120px; font-size: 18px; line-height: normal;background-color: #D9D9D9;}
+.form-wrapper .input-wrapper input[type="submit"] { background-color: var(--primary-color); color: var(--white-color); border: 1px solid var(--primary-color); border-radius: 60px; padding: 15px 25px; min-width: 210px; text-align: center; font-size: 20px; font-weight: 600; line-height: normal; font-family: var(--primary-font); position: absolute; right: 4px; top: 50%; transform: translateY(-50%);}
+.form-wrapper .input-wrapper input[type="submit"]:hover {background: #fff; color: var(--primary-color); transition: var(--primary-transition); }
+
+
+
+
+/* Get updates setion css end */
+
 
 
 @media(max-width:1429px){
@@ -240,7 +258,12 @@ p:last-child{margin:0;}
   .create-and-sell-section .info-card-wrapper .info-card-row { display: flex; flex-wrap: wrap; }
   .create-and-sell-section .info-card-wrapper .info-card-row .info-card { width: 100%; }
   .articles-section { padding: 40px 0; }
+  .get-updates-section { padding: 40px 0; }
+  .get-updates-section .content { margin-top: 30px; }
+  .get-updates-section .form-wrapper { margin-top: 30px; }
   .articles-section .trending-slider-wrapper { display: flex; flex-wrap: wrap; } 
+  .form-wrapper .input-wrapper input[type="email"] { padding: 22px 132px 22px 32px; } 
+  .form-wrapper .input-wrapper input[type="submit"] {min-width: auto;}
 }
 @media(max-width:575.98px){
     h1 {font-size: 44px;line-height: 50px;}
